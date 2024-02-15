@@ -1,0 +1,12 @@
+import pdb
+my=[1,23,45,24,67,87,56,56,90,89,97]
+maxnum=my[0]
+minnum=my[0]
+for number in my:
+    pdb.set_trace()
+    if number > maxnum:
+        maxnum=number
+        
+    elif number < minnum:
+        minnum =number
+print(f"{maxnum} and min {minnum}")

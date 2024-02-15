@@ -1,0 +1,1017 @@
+# sum of numbers from one to n
+import pdb
+# n=int(input("enter the value :"))
+# pdb.set_trace()
+# sum=0
+# for i in range(1,n+1):
+#     sum=sum+i
+# print(sum)
+
+# 2)  reverse a string :-
+
+# given_string=input("enter the string value :")
+# resstring=''
+# for i in given_string :
+#     resstring=i+resstring
+# print(f"the given string is {given_string} and reserse string is {resstring}")
+
+# 3) write a programe to check the string  is polindrom 
+
+# given_string=input("enter the string :")
+
+# reversestrg=given_string[::-1]
+
+# if given_string == reversestrg:
+#     print("the given sting is polindrome")  
+# else:
+#     print("the given string is not polindrome")
+
+# 4)  write a programe to find factorial of a number
+
+# n=int(input("enter the value :"))
+
+# if n<0:
+#     print("invalid value ")
+# elif n==0:
+#     print("the factorial value is 1")
+# else:
+#     fact=1
+#     for i in range(1,n+1):
+#         fact=i*fact
+# print(f"the given value {n} factorial is {fact}")
+
+
+# 5) write a programe check the number is armstrong 
+#153
+# number=int(input("enter the value is :"))
+# originalval=number
+# string_val=str(number)
+# armnumber=0
+# for i in string_val:
+#     armnumber=armnumber+int(i)*int(i)*int(i)
+# print(armnumber)
+# if armnumber  == originalval:
+#     print("the given number is armstrong number")
+# else:
+#     print("the given number is not armstrong number")
+# for i in string_val:
+#     armnumber=armnumber+pow(int(i),3)
+# if armnumber  == originalval:
+#     print("the given number is armstrong number")
+# else:
+#     print("the given number is not armstrong number")
+
+# mul=0
+# while originalval>0:
+#     num=originalval%10
+#     mul=mul+pow(num,3)
+#     originalval=originalval//10
+# if number == mul :
+#     print("the given value is armstrong number ")
+# else:
+#     print("the given value is not armstring number")
+
+# 6)  write a programe 1 to 100 to prime numbers
+
+# given_number=int(input("enter the value is: "))
+
+# for i in range (2,given_number+1):
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         print(i,end=' ')
+
+# 7)  swaping numbers without using third number
+
+# a=int(input("enter the value is :")) #10
+# b=int(input("enter the value is :")) #20
+
+# b=a+b
+# a=b-a
+# b=b-a
+
+# print("a is :",a,"b is :",b)
+
+
+#8) write a programe reverse a number
+
+# the_given_number=int(input("enter the number is :"))
+# #153
+# get_num=0
+# while the_given_number >0:
+#    num= the_given_number %10
+#    get_num=get_num*10+num
+#    the_given_number=the_given_number//10
+
+# print("the reverse number is :",get_num)
+
+#9) write a programe factors of a number
+# number= int(input("enter the number :"))
+# for i in range(1,number+1):
+#     if number%i == 0:
+#         print(i,end=' ')
+
+#10) write a programe to get matching charectors in a programe
+# given_string=input("enter the string is:")
+# matching=set()
+# for i in given_string:
+#     if given_string.count(i)>1:
+#         matching.add(i)
+        
+# print(matching)
+
+# 11) given string how many e=charectors in string in dict formate 
+
+# given_string=input("enter the string is:")
+# matching={}
+# for i in given_string:
+#     pdb.set_trace()
+#     if i in matching:
+#         matching[i]+=1
+#     else:
+#         matching[i]=1
+        
+        
+# print(matching)
+        
+     
+# 12) print uniqe charectors only given string 
+ 
+# given_string=input("enter the string is:")
+# match_ch=[]
+# for i in given_string:
+#     if i not in match_ch:
+#         match_ch.append(i)
+# print(match_ch)
+
+# 13) fibonacci series:
+# given =int(input("enter the value is:"))
+# n1=0
+# n2=1
+# if given <0:
+#     print("invalid number")
+# elif given ==1:
+#     print("the fibonacci 1 is 0")
+    
+# else:
+#     while given >0:
+#         print(n1, end=" ")
+#         nextele=n1+n2
+#         n1=n2
+#         n2=nextele
+#         given -=1
+        
+#12 ) number of Vowels and consonants in a given string 
+
+# the_given_string=input("enter the value is ")
+# vowles=0
+# consonets=0
+# vowles_are=['a','e','i','o','u']
+# for i in the_given_string:
+#     if i in vowles_are:
+#         vowles +=1
+#     else:
+#         consonets +=1
+# print(f" the given string is :{the_given_string} in the string we are having vowels are :{vowles} and consonetse are : {consonets}")
+
+#13) check the given two strings anagrams or not 
+# name1=input("enter the string value is:")
+# name2=input("enter the string value is:")
+# if len(name1) ==len(name2):
+#     if sorted(name1) ==sorted(name2):
+#         print("the given strings are anagrames")
+#     else:
+#         print("the given are not anagrams")
+# else:
+#     print("the given are not anagrams")
+
+   
+
+#14) find the given charector count in the given string 
+
+# given_str= input("enter the string is:")
+# cha=input("enter the charestor is :")
+# count=0
+# for i in given_str:
+#     if i == cha:
+#         count +=1
+        
+        
+# print(count)
+
+#15) calculate the number of digits in a string :
+# given_string=input("enter the string is :")
+
+# digits=str([0,1,2,3,4,5,6,7,8,9])
+# numberofdigits=0
+# for i in given_string:
+#     if i in digits:
+#         numberofdigits +=1
+# print(numberofdigits)
+
+
+#16) find the digits in a string :
+
+# string=input("enter the value of string :")
+# count=0
+# for i in string:
+#     if i.isdigit():
+#         count +=1
+# print(count)
+
+# 17 ) first non repeating charector in  a string
+
+# def first_non_repeating(input_string):
+#     non_repeating={}
+#     for char in input_string:
+#         if char in non_repeating:
+#             non_repeating[char] +=1
+#         else:
+#             non_repeating[char] =1
+#     for char in input_string:
+#         if non_repeating[char]==1:
+#             return char
+#     return None
+# stringval="suneuel"
+# res=first_non_repeating(stringval)
+# print(res)
+
+#  18)    find the missing number in a arry
+
+# def missing_letter_in_array(arry):
+#     n=len(arry)+1
+#     print(n)
+#     totalsum=n*(n+1)//2
+#     print(totalsum)
+#     sum=0
+#     for i in arry:
+#         sum=sum+i
+#     print(sum)
+#     missingletter = totalsum-sum
+#     return missingletter
+# given_array=[1,2,3,5,6,7,8,9]
+# res=missing_letter_in_array(given_array)
+
+# print(f"the missing letter is ",res)
+
+# 19) removing duplicates from the list 
+# myarry=[1,2,3,3,4,5,6]
+# unique=[]
+# for i in myarry:
+#     if i not in unique:
+#         unique.append(i)
+# print(f"the unique list is {unique}")
+
+
+#  20) determine the largest and smallest element in the list
+
+# my=[15,23,45,24,67,87,56,56,90,89,97]
+
+# maxnumber=my[0]
+# minnumber=my[0]
+# for num in my:
+#     pdb.set_trace()
+#     if num>maxnumber:
+#         maxnumber=num
+#     elif num<=minnumber:
+#         minnumber=num
+# print(f"first maxnumber {maxnumber} and min number {minnumber}")
+
+# 20) determine the secound largest number in array
+
+# my=[1,23,45,24,67,87,56,56,90,89,97]
+
+# firstmax=max(my[0],my[1])
+# secoundmax=min(my[0],my[1])
+
+# for i in range(2,len(my)):
+#     if my[i]>firstmax:
+#         secoundmax=firstmax
+#         firstmax=my[i]
+#     elif my[i]>secoundmax:
+#         secoundmax =my[i]
+# print(f"secound max  is {secoundmax}")
+
+# 21) binary to decimal convert
+# binarynumber='101010'
+# binarynumber_to_decimal=int(binarynumber,2)
+# print(binarynumber_to_decimal)
+
+# print(1*2**5+0*2**4+1*2**3+0*2**2+1*2**1+0*2**0)
+
+ # 22) decimal number to binary number 
+# def binary_convert(decimalnumber):
+#     binaryvalues=[]
+#     if decimalnumber ==0:
+#         return 0
+#     else:
+#         while decimalnumber >0:
+#             reminder=decimalnumber%2
+#             binaryvalues.append(str(reminder))
+#             decimalnumber=decimalnumber//2
+#         binaryrepresentation=''.join(binaryvalues[::-1])
+#         return binaryrepresentation
+# res=binary_convert(42)
+# print(res)
+
+#23) how to check the number prime or not
+
+# number=int(input("enter the number"))
+
+# count=0
+
+# for i in range (1,number+1):
+#     if number%i ==0:
+#         count +=1
+# if count == 2:
+#     print("the given number is prime number")
+# else:
+#     print("the given number is not a prime ")
+        
+        
+        
+# 24)  24) find the factorial of anumber
+
+# number=int(input("enter the number"))
+# if number <0:
+#     print("the given number is invalid")
+# elif number ==1 :
+#     print("the factorial of a 1 is 1")
+# else:
+#     fact=1
+#     for i in range(1,number+1):
+#         fact= fact*i
+# print(fact)
+
+# 25)  how to swap 2 elements in a list 
+
+# given_list=[12,13,14,15,16,67,89]
+
+# given_list[0],given_list[-1]=given_list[-1],given_list[0]
+# print(given_list)
+
+# example 2:
+
+# temp=given_list[0]
+# given_list[0]=given_list[-1]
+# given_list[-1]=temp
+
+# print(given_list)
+
+
+# 26) remove the nth occurence of the element in given list 
+
+# given_list=["suneel","anil","mahesh","naven","somesh"]
+# given_occurence= int(input("enter the occurence :"))
+# lenght=len(given_list)
+# if lenght<given_occurence:
+#     print("invalid number")
+# else:
+    
+#     for i in given_list:
+#         if i == given_list[given_occurence]:
+#             given_list.remove(i)
+#     print(given_list)
+
+# 27)  find the values filter() :
+
+# mylist=[2,4,6,8,9,10,20,30]
+
+# pdb.set_trace()
+# def remiderzero(n):
+#     return n%2==0
+    
+
+# getdata=filter(remiderzero,mylist)
+
+# even_numbers_list = list(getdata)
+
+# print(even_numbers_list)
+
+
+
+
+# 28) map method  using 
+
+# my_list=[2,3,4,5,6,6,7,8]
+
+# def get_values(n):
+#     return n*2
+
+# squervalues=map(get_values,my_list)
+
+# values=list(squervalues)
+
+# print(values)
+
+# 30)  reduce method using 
+# from functools import reduce
+
+
+# # Define a function to add two numbers
+# def add(x, y):
+#     return x + y
+
+# # Create a list of numbers
+# numbers = [1, 2, 3, 4, 5]
+
+# # Use reduce to sum all the numbers in the list
+# total = reduce(add, numbers)
+
+# print(total) 
+
+# 31) decoretors in python 
+
+'''
+In Python, decorators are a powerful feature that allows you to modify or extend 
+the behavior of functions or methods without changing their code directly.
+Decorators are functions themselves that wrap other functions or methods 
+and add some additional functionality to them.'''
+
+# def login_required(f1):
+#     def inner(name,is_login):
+#         if is_login == 'Flase':
+#             print("login is required")
+#             return
+#         return f1(name,is_login)
+#     return inner
+# @login_required
+# def home (name,is_login):
+#     print("welcome to home page")
+# @login_required
+# def orders(name,is_login):
+#     print("welcome to orders page")
+# def about():
+#     print('welcome to about page')
+    
+# home('user','Flase')
+# orders('user','True')
+# about()
+
+
+
+# def login_required(f1):  # in this decoretor function we are passing function
+#     def wrapper(name,login):  # here we are passing function parameters
+#         if login =='False':
+#             print(name,"login required")
+#             return
+#         return f1(name,login)
+#     return wrapper
+        
+
+# @login_required
+# def home(name,login):
+#     print("this is home page ")
+# @login_required
+# def product(name,login):
+#     print("this is product view page")
+# def about():
+#     print("this is about page")
+    
+# home('suneel','True')
+# product("anil","False")
+# about()
+#32) generetors in python
+import sys
+# def ninetable(n):
+#     for i in range (1,20+1):
+#         yield f"{n} x {i} ={n*i}"
+
+# res=ninetable(9)
+# size=sys.getsizeof(res)
+# print("size :",size)
+# for i in res :
+#     print(i)
+
+# import sys
+# def tables(n):
+#     mylist=[]
+#     for i in range (1,11):
+#         mylist.append(f"{n} x {i} ={n*i}") 
+#     return mylist
+    
+# res=tables(9)
+# print(sys.getsizeof(res))
+# for i in res:
+#     print(i)
+
+# 33) threads in python 
+
+# import threading 
+# def printnumbers():
+#     for i in range(1,10):
+#         print(i)
+
+# def letters():
+#     for letter in "suneel":
+#         print(letter)
+# t1=threading.Thread(target=printnumbers)
+# t2=threading.Thread(target=letters)
+# t1.start()
+# t2.start()
+# t1.join()
+# t2.join()
+
+# *************** python  learning ******************************
+
+# content 
+''' interpreter using comunicating mechine and human
+# why python  
+
+1) simple syntax
+2) no of lines less(lenght of code is less)
+3) complex problems can be solved in simple manaer
+
+4) python is both procedural and Object Oriented Language
+5) file extention is .py
+6) database connectivity Supported
+
+
+# features :-
+
+* simple to learn 
+* open source
+* portability(windows,linux,max)
+* high level interpreter (memory management itself,as well garbage collector)
+* object oriented programming
+*standered libraries
+
+# applications:
+web & internet appilications
+desktop GUI Applications
+Artificial Intelligence
+Machine Learning
+Image Processing Applications
+NetWoking appilications
+database Access 
+'''
+
+'''
+varialble: - A variable is defined as an alternative name for memoryLocation and 
+have  ashort or more descriptive name 
+
+# name start with underscore and letter 
+# A variable name cannot  start with number 
+# a variable can only contain alphanumeric and underscores
+# variable are case-sensitive 
+# should not match with key words
+
+'''
+
+
+'''
+ # Bulit -in type 
+ * Numeric
+ > integer
+ > complex numbers
+ > Float
+ *Dictionary
+ > key value pairs 
+ 
+ *Boolean > true or False
+ *Set() {}
+ *sequence datatype
+ . list
+ . tuple
+ . strings
+ 
+ # in python declaration not required  implicity interpreter takes care 
+ 
+ # values assigning to variable
+ 
+ 1) basic form:
+ 
+ a=10
+ 
+ expalnation :- a is memory location and right side is expression
+ 
+ 2) tuple assignment:
+ 
+ a,b =(10,20)
+ 
+ 3) list assignment:-
+ 
+ a,b=[10,20]
+
+4) squence assignment:-
+
+ a,b,c=10,20,30
+ 
+5)Extended sequence Unpacking:-
+ p,*q ="hello"
+ 
+6) multiple target assignment:-
+ a=b=c=0
+ 
+7) Augmented assignment:-
+a=10
+a+=5
+'''
+'''
+# input and output Functions :-
+input() function is used to read data from keyboadrd 
+
+*it reads  data into string formate
+Based on requirement he can convert the data into specific format before using them
+
+int(2.3) it return 2
+
+Float(6) it retrun 6.0
+
+str(8)  it return '8'
+
+Using Formate specifiers:-
+a=10
+b=20
+print("%d is integer and %.2f is a float"%(a,b))
+
+with out using Formate Specifiers:-
+
+print(a,"is interger",b"is a float number")
+
+
+'''
+'''
+Oparetors:-
+* Arthmetic Oparetors
+* Relational Oparetors
+* Assignment Oparetors
+* Bitwise Oparetors
+* Logical Oparetors
+* Membership Oparetors  in , not in 
+* identity Oparetors   is , is not 
+
+# control structures 
+
+Control structures in Python are constructs that 
+allow you to control the flow of execution in your program. 
+Python provides several control structures, including conditional statements (if, elif, else), loops (for loop, while loop),
+and control flow modifiers (break, continue, pass).
+
+* squence execution
+* conditional statements
+* iteretive statements
+* jumping statements
+
+iteretive statements:- 
+
+loop variable initialzation
+condition
+updation
+
+while loop
+for loop :- sequence , range(start,end,step)
+
+The while loop is used to execute a block of code repeatedly
+as long as a condition is True. The basic syntax is
+
+
+'''
+'''
+# list :-
+list is enclosed with [coma separeted values  ]
+diffenrent datatypes 
+
+list is mutable 
+python support forword index and backward index
+whenever created list we can modify it (add ,delete,reassign)
+a=[]
+b=list() # empty list
+print(type(b))
+aa=[1,2,3,4,"hello",89.7]
+print(aa)
+
+indexing:-
+mylist=[10,20,30,"hello",'welcome']
+print(mylist[0])
+
+slicing:- to extract some data from given sequence of data 
+mylist=[10,20,30,"hello",'welcome']
+print(mylist[0:len(mylist):2])
+
+reassingn:-
+mylist=[10,20,30,"hello",'welcome']
+mylist[0]="suneel"
+print(mylist)
+
+multidimentional list:-
+mylist=[[10,20,30],[40,50,60]]
+a=mylist[0][0]
+print(a)
+
+mylist=[[10,20,30],[40,50,60]]
+single=[item for sublist in mylist for item in sublist]
+print(single)
+
+#Basic Operations:-
++ :- concatination
+* :- repetation list and integer only a*b
+min :-
+max :-
+sum :-
+membership :- in ,not in 
+for loop :-
+for i in mylist:
+    print(i)
+for i in range(0,len(mylist)):
+    print(mylist[i])
+    
+bulit - in methods:-
+
+mylist.append(10)
+mylist=[10,20,30,40]
+mylist.extend(["siunee",120])
+mylist.insert(0,"suneel")
+mylist.remove(10) # it takes value of remove item
+mylist.pop(0) # pop takes index value
+mylist.pop() last value deleted
+del mylist[0]
+del mylist   it delets completed list
+
+mylist=[10,24,3,4]
+mylist.sort(reverse=True)
+print(mylist)
+
+print(mylist)
+
+mylist.count(10) mo of count it will gives
+
+mylist.index(2) it will index value of charector
+
+mylist.reverse()  it will reverse the 
+
+print(dir(list)) it will gives the all the methods 
+
+   
+'''
+'''
+tuple is immutable and we cannot modify and add data and delete 
+comma separeted ,different data types 
+
+mytuple=()
+print(type(mytuple))
+print(mytuple[0:2])
+
+if we want to add elements remove ele from tuple
+we need to convert into list and than convert into list
+
+mytuple=(10,2,3,23,22,45,78)
+mylist=list(mytuple)
+mylist.append("suneel")
+mytuple=tuple(mylist)
+print(mylist)
+
+
+'''
+'''
+# strings 
+
+ string is immutable
+
+my='python'
+my="python's"
+print(my)
+
+multiline perpose we can use the triple quotes
+
+a=10
+b=20
+print("the value {0} is and b value is{1}".format(a,b))
+
+Basic operation:
+
++ ,* ,min ,max , membership ,iteration for loop
+
+bulit-in methods:-
+my="pythonpa1"
+print(my.capitalize())
+print(my.startswith('w'))
+print(my.center(10,'*'))
+print(my.count('p',1,len(my)))
+print(my.endswith('p'))
+print(my.find('z'))
+print(my.rfind('p'))
+print(my.index("p")) # if their is no value we get error 
+print(my.rindex('p'))
+print(my.isalnum())
+print(my.isalpha())
+print(my.isdigit())
+print(my.isspace())
+print(my.islower())
+print(my.isupper())
+print(my.title())
+print(my.istitle())
+print(my.ljust(10,' '))# whatever data move to left side 
+print(my.rjust(10,' '))#data move to right side speces left side 
+print(my.replace('p','z',1))
+print(my.split(' ',2)) # it will give list of values 
+print(my.swapcase())
+print(my.zfill(10))
+
+'''
+'''
+# set:-
+* it is mutable
+* unordered multipule datatypes accepted
+* not supported slicing
+* not supported indexing 
+* dulicaltes removed 
+
+myset=set()
+my=set([10,20,30,40,10,20])
+print(my)
+
+bulit-in methods :-
+my.add("suneel")
+my.remove(10)
+my.discard('suneel')
+my.pop()
+my.clear()
+del my
+len()
+10 in my 
+
+for i in my:
+print(my)
+
+a={10,20,30,40,50}
+b={10,20,30,80}
+# print(b.issubset(a))
+# print(a.issuperset(b))
+
+# print(a.union(b)) # it creates new set 
+# print(a.intersection(b)) # 
+# print(a.difference(b))
+# print(a.symmetric_difference(b))
+
+# a.update(b)
+# print(a)
+# a.intersection_update(b)
+# print(a)
+# a.difference_update(b)
+# print(a)
+# a.symmetric_difference(b)
+# print(a)
+
+ 
+'''
+
+'''# dictionaries
+key : value pairs
+keys :- noduplicates
+values :- non duplicates
+
+no index supported
+
+empty={}
+my=dict()
+
+my={'name':'suneel','age':25,'city':'nellore'}
+
+my['color']='red'
+print(my)
+
+del my['name']
+my.clear()
+
+d.update(d1)
+
+dict comphrehension :-
+mydict={i:i**2 for i in range(10)}
+print(mydict)
+
+a={'a':1,'b':2,'c':3}
+print(a.items())
+print(a.values())
+print(a.keys())
+
+
+example programe;
+
+a='aassddfffg'
+mydict={}
+for i in a:
+    if i in mydict:
+        mydict[i] +=1
+    else:
+        mydict[i] =1
+
+print(mydict)
+
+
+
+'''
+'''# Functions
+bulit-in functions
+user defined functions
+lambda functions
+recursion
+
+resursion:-
+
+def fact(n):
+#     if n==0 or n==1: # base condition
+#         return 1
+#     else:
+#         return n*fact(n-1) # calling same function itself
+# res=fact(4)
+# print(res)
+
+
+# add=lambda a,b:a+b
+
+# print(add(10,20))
+
+'''
+
+'''Files concept 
+
+we can store the output
+open file read/write close 
+
+open('filelocation','mode')
+r- read :- if we want to read file it must be exist other wise it will give error
+w- write :- if file doen't exist it will create the file
+a- append :- if the file doesn't exist it will create the file 
+
+
+# when ever given the location we need to give double backslase
+
+fo=open('C:\\Users\\VSK REDDY\\Desktop\\files\\hello.txt','w')
+fo.close()
+
+
+
+'''
+'''
+OPP concept-
+
+class having 
+methods 
+attributes
+
+if we want to access methods and attribute we need to create object
+
+class flowed by name
+class student:
+
+# Inheritance:-
+single Inheritance
+multilevel Inheritance
+hirarical Inheritance
+multipule Inheritance
+
+# super method using:-
+
+class Student:
+    a=10
+    b=20
+    def __init__(self,name,roll):
+        self.name=name
+        self.roll=roll
+    def home(self):
+        print(f"this is home page welcome{self.name} and roll number is {self.roll}")
+class collage(Student):
+    def __init__(self,name,roll,city,father):
+        super().__init__(name,roll)
+        self.city =city
+        self.father=father
+    def home(self):
+        super().home()
+        print(f"her father name is {self.father} and city is {self.city}")
+        print(super().a)
+
+obj=collage('suneel',101,'nellore','papireddy')
+obj.home()
+
+'''
+
+'''
+datetime 
+from datetime import datetime
+from datetime import date
+from datetime import time
+
+print(datetime.now())
+print(date.today())
+a=date(2022,1,23)
+b=time(12,30,22,345)
+print(b.hour)
+
+'''
+
+
+            
+    
+    
+
+
+            
+            
+            
+
+
+
+    
+

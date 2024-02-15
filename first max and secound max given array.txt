@@ -1,0 +1,12 @@
+my=[1,2,3,4,52,6,71]
+first=my[0]
+secound=my[0]
+
+for i in my:
+    if i >first:
+        secound=first
+        first=i
+    elif i > secound:
+        secound = i
+print(f" {first} and secound max {secound}")
+        

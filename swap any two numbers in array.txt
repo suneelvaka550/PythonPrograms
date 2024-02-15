@@ -1,0 +1,11 @@
+my=[1,2,3,4,5,6,7,8,9]
+
+pos1=int(input("enter the pos1 value :"))
+pos2=int(input("enter the pos2 value :"))
+
+if len(my)< pos1 and len(my) < pos2:
+    print("pls provide the valid number")
+else:
+    my[pos1],my[pos2]=my[pos2],my[pos1]
+    print(my)
+    

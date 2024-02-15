@@ -1,0 +1,55 @@
+1)  Here we convert the binary number to decimal number 
+
+
+binarynumber='101010'
+convert_to_decimealnumber=int(binarynumber,2)
+print(convert_to_decimealnumber)
+
+
+
+
+2) here we conver the decimal number to decimal number 
+
+
+def binary_digits(decimalnumber):
+    binaryvalue=[]
+    if decimalnumber==0:
+        return '0'
+    while decimalnumber>0:
+        reminder=decimalnumber%2
+        binaryvalue.append(str(reminder))
+        decimalnumber = decimalnumber//2
+    binary_representation = ''.join(binaryvalue[::-1])
+    return binary_representation
+        
+
+res=binary_digits(42)
+print (res) 
+
+
+
+
+3) here we are converting binary number to decimal and decimal to binary 
+
+
+
+
+n=int(input("enter the value :"))
+decimaldigits=[]
+def convert_to_binary(number):
+    # checking the condition here
+    if number==0:
+        return '0'
+    while number>0:
+        reminder=number%2
+        decimaldigits.append(str(reminder))
+        number = number//2
+    decimal_representation ="".join(decimaldigits[::-1])
+    return decimal_representation
+res=convert_to_binary(n)
+print("binary number : ",res)
+
+binary_number=res
+converto_decimal=int(binary_number,2)
+print(f"the decimal number is :{converto_decimal}")
+     

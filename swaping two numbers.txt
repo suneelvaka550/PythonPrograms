@@ -1,0 +1,19 @@
+
+# swaing of two numbers :-
+a=int(input("enter the value :"))
+b=int(input("enter the value is :"))
+
+print("the value of a is : ",a)
+print("the value of b is : ",b)
+
+temp=a
+a=b
+b=temp
+print("the value of a is : ",a)
+print("the value of b is : ",b)
+
+# secound method 
+a,b =b,a
+
+print("the value of a is : ",a)
+print("the value of b is : ",b)

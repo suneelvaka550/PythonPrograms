@@ -1,0 +1,447 @@
+import pdb
+
+# 1) sum of 1 to n :-
+# n=int(input("enter the value :"))
+# sun=0
+# pdb.set_trace()
+# for i in range (1,n+1):
+#     sun=sun+i
+# print(f"the sum of 1 to {n} is {sun}")
+
+# 2) reverse a string :-
+# string=input("enter the string value :")
+# res=''
+# for i in string:
+#     pdb.set_trace()
+#     res=i+res
+# print(f"the given string is {string} and reverse string is :{res}")
+# res=string[::-1]
+# print(res)
+
+# 3) write a programe to check the string  is polindrom
+
+# given_str=input("enter the string value:")
+
+# res_string=''
+# for i in given_str:
+#     res_string=i+res_string
+    
+# if given_str == res_string:
+#     print("the given string is polindrome")
+# else:
+#     print("the given string is not a polindrome")
+
+# 4)  write a programe to find factorial of a number 
+
+# n=int(input("enter the value :"))
+
+# if n<0:
+#     print("invalid number ")
+# elif n==0:
+#     print("the factorial of 0 is 1")
+# else:
+#     mul=1
+#     for i in range(1,n+1):
+#         mul=mul*i
+# print(mul)
+
+# 5) write a programe check the number is armstrong 
+
+# n=int(input("enter the number :"))
+
+# convert_to_str=str(n)
+# val=0
+# for i in convert_to_str:
+#     val=val+pow(int(i),3)
+# #     val=val+int(i)*int(i)*int(i)
+    
+# print(val)
+
+# if n==val:
+#     print("the given number is polindrome")
+# else:
+#     print("the given number is not a polindrome")
+
+# example2
+# n=int(input("enter the value is :"))
+# number=n
+# mul=0
+# while number>0:
+#     num=number%10
+#     mul=mul+pow(num,3)
+#     number=number//10
+# print(type(mul))
+# print(n)
+# if (n==mul):
+#     print("the number is armstrong number")
+# else:
+#     print("the number is not a armstrong number")
+
+# 3) write a programe 1 to 100 to prime numbers
+
+# n=int(input("enter the value :"))
+
+# for i in range(2,n+1):
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         print(i,end=" ")
+
+# 7)swaping numbers without using third number
+
+# a=int(input("enter the value is :"))
+# b=int(input("enter the value is :"))
+# b=b+a
+# a=b-a
+# b=b-a
+# print("a:",a)
+# print("b:",b)
+
+# a=10
+# b=20
+# a=a+b
+# b=a-b
+# a=a-b
+# print("a:{} and b is{}".format(a,b))
+
+#8) write a programe reverse a number
+
+#153
+
+# number=int(input("enter the value is :"))
+# value=0
+
+# while number>0:
+#     nu=number%10
+#     value=value*10+nu
+#     number=number//10
+# print(value)
+
+#9) write a programe factors of a number 
+
+# n=int(input("enter the value is :"))
+# for i in range(1,n+1):
+#     if n%i==0:
+#         print("the factors of a number is ",i)
+
+#10) write a programe to get matching charectors in a programe
+
+# number=input("enter the value is :")
+# # suneel
+# matching=set()
+# for i in number:
+#     if (number.count(i)>1):
+#         matching.add(i)
+# print(matching)
+        
+
+#11) fibonacci series:
+
+# n=int(input("enter the number is:"))
+# n1=0
+# n2=1
+# if (n<=0):
+#     print("invalid number ")
+# elif (n==1):
+#     print("in the fibonacci series 1 is 0")
+# else:
+#     values=0
+#     while n>values:
+#         print("fiboncci values are :",n1,end=' ')
+#         nextelement=n1+n2
+#         n1=n2
+#         n2=nextelement
+#         values +=1
+        
+          
+#12 ) number of Vowels and consonants in a given string 
+
+# stringval=input("enter the the string value:")
+# vowels=['a','e','i','o','u']
+# vo_count=0
+# con_count=0
+# for i in stringval:
+#     if i in vowels:
+#         vo_count +=1
+#     else:
+#         con_count +=1
+# print(f"the given string vowels count is {vo_count} and consonantes count is {con_count}")
+        
+        
+#13) check the given two strings anagrams or not 
+
+# name1=input("enter the string value is:")
+# name2=input("enter the string value is:")
+# if len(name1) == len(name2):
+#     if sorted(name1) == sorted(name2):
+#         print("the given strings are anagrames")
+#     else:
+#         print("those two strings are not anagrames")
+
+# else:
+#     print("the given both are not anagrams")
+
+ 
+#14) find the given charector count in the given string 
+
+# string=input("enter the given string is ")
+# charector=input("enter the given charector is ")
+# count=0
+# for i in string:
+#     if i == charector:
+#         count +=1
+# print(count)
+
+#15) calculate the number of digits in a string :
+
+# string=input("enter the value of string :")
+
+# digits=['1','2','3','4','5','6','7','8','9','0']
+# number_of_digits=0
+# for i in string:
+#     if i in digits:
+#         number_of_digits +=1
+# print(number_of_digits)
+
+#15) find the digits in a string :
+
+# string=input("enter the value of string :")
+# count=0
+# for i in string:
+#     if i.isdigit():
+#         count +=1
+# print(count)
+
+
+        
+#    16 ) first non repeating charector in  a string
+# string =input("enter the string value is :")
+
+# for i in string :
+#     if string.count(i)==1:
+#         break
+# print(i) 
+# firstnonrepeating=False
+# while string != '':
+#     originallen=len(string)
+#     char=string[0]
+#     string=string.replace(char,'')
+#     afterlength=len(string)
+#     if (originallen-1 == afterlength):
+#         print("the first occurence letter is ",char)
+#         firstnonrepeating=True
+#         break
+# if firstnonrepeating ==False:
+#     print("the first non repeating charector not foundis ",)
+
+#  17)   find the missing number in a arry
+
+# numbers=[1,2,3,5,6,7,8,9,10]
+# n=len(numbers)+1
+
+# totalsum= n*(n+1)//2
+# print(totalsum)
+
+# sum=0
+# for i in numbers:
+#     sum=sum+i
+# missingletter =totalsum-sum
+
+# print(missingletter)
+
+#    18) removing duplicates from the list array
+
+# myarry=[1,2,3,3,4,5,6]
+
+# myuniquelist=[]
+# for i in myarry:
+#     if i not in myuniquelist:
+#         myuniquelist.append(i)
+# print(myuniquelist)
+
+#  19) determine the largest and smallest element in the list
+
+# import pdb
+# my=[1,23,45,24,67,87,56,56,90,89,97]
+# maxnum=my[0]
+# minnum=my[0]
+# for number in my:
+#     if number > maxnum:
+#         maxnum=number
+        
+#     elif number < minnum:
+#         minnum =number
+# print(f"{maxnum} and min {minnum}")
+    
+# 20) determine the secound largest number in array
+
+# my=[1,23,45,24,67,87,56,56,90,89,97]
+
+# firstmax= max(my[0],my[1])
+# secoundmax= min(my[0],my[1])
+# for i in range (2,len(my)):
+#     if my[i]>firstmax:
+#         secoundmax =firstmax
+#         firstmax =my[i]
+#     elif my[i]>secoundmax:
+#         secoundmax =my[i]
+# print(secoundmax)
+# print(firstmax)
+
+# 21) binary number to decimal number
+
+# binarynumber='101010'
+# converting_decimal_number=int(binarynumber,2)
+# print(converting_decimal_number)
+
+# 1101 
+# print(1*2**3+1*2**2+0*1**1+1*0**0)
+
+# def binary_to_decimal(binary_str):
+#     decimal_num = 0
+#     power = 0
+
+#     # Iterate through the binary digits in reverse order
+#     for i in reversed(binary_str):
+#         if i == '1':
+#             decimal_num += 2 ** power
+#         power += 1
+
+#     return decimal_num
+
+# # Example usage
+# binary_number = "1101"
+# decimal_result = binary_to_decimal(binary_number)
+
+# print(f"The decimal equivalent of binary {binary_number} is: {decimal_result}")
+
+#22) decimal to binary number
+
+
+# def binary_digits(decimalnumber):
+#     binaryvalue=[]
+#     if decimalnumber==0:
+#         return '0'
+#     while decimalnumber>0:
+#         reminder=decimalnumber%2
+#         binaryvalue.append(str(reminder))
+#         decimalnumber = decimalnumber//2
+#     binary_representation = ''.join(binaryvalue[::-1])
+#     return binary_representation
+        
+
+# res=binary_digits(42)
+# print (res) 
+
+#23) how to check the number prime or not
+
+
+
+
+
+# number=int(input("enter the number :"))
+# count=0
+# if number>1:
+#     for i in range(1,number+1):
+#         if number%i==0:
+#             count +=1
+# if count ==2:
+#     print("the given number is prime number")
+# else:
+#     print("not aprime number")
+
+# 24) find the factorial of anumber
+
+# number=int(input("enter the number:"))
+
+# if number<0:
+#     print("enter valid number ")
+# elif number==1:
+#     print("the factorial of 1 is 1")
+# else:
+#     fact=1
+#     for i in range(1,number+1):
+#         fact=fact*i
+# print(fact)
+
+# ) 25) fiboncci series :
+
+# n= int(input("enter the number:"))
+# n1=0
+# n2=1
+
+# if n<0:
+#     print("invalid number")
+# elif n==1:
+#     print("the given number fiboncci is 0")
+# else:
+#     while n>0:
+#         print(n1,end=' ')
+#         nextelement=n1+n2
+#         n1=n2
+#         n2=nextelement
+#         n -=1
+
+# 26) sum of array
+# array=[1,2,3,4,5,6]
+
+# print(sum(array,10))
+# sum=0        
+# for i in array:
+#     sum=sum+i
+# print(sum)
+
+# 27) maximum and minmum numbers in array
+
+# array=[11,23,24,54,78,56,0,90,56,34,78,90,99,7686]
+
+# maxnum=array[0]
+# minnum=array[0]
+# for i in range (1,len(array)):
+#     if array[i]>maxnum:
+#         maxnum=array[i]
+#     elif array[i]<minnum:
+#         minnum=array[i]
+# print(maxnum)
+# print(minnum)
+
+#28) how to swap 2 elements in a list 
+
+# array=[10,2,23,45,66,78]
+# array[0],array[-1]=array[-1],array[0]
+# print(array)
+
+# example 2:
+
+# temp=array[0]
+# array[0]=array[-1]
+# array[-1]=temp
+# print(array)
+
+# 30) remove the nth occurence of the element in given list 
+
+
+# given_list=["suneel","anil","mahesh","naven","somesh"]
+# given_occurence=int(input("enter the occurence value:"))
+# lenght= len(given_list)
+# if given_occurence>lenght:
+#     print("invalid_occurence") 
+# else:
+#     for i in given_list:
+#         if i ==given_list[given_occurence]:
+#             given_list.remove(i)
+#             print(given_list)
+
+#31) find the element in given list 
+
+# mylist=[1,23,44,55,6,7,88,97,44,3]
+# given_element=int(input("enter the value is :"))
+
+# for i in mylist:
+#     if i==given_element:
+#         print("the element is founded")
+#         break
+# else:
+#     print("the element is not found")
+

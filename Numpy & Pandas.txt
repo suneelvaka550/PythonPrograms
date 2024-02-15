@@ -1,0 +1,169 @@
+import numpy as np
+# a=np.array(10)
+# print(type(a))
+# one_dimensional_array = np.array([1, 2, 3, 4, 5])
+# print(one_dimensional_array[1])
+# result = one_dimensional_array * 2
+# print("Result of multiplication:", result)
+
+# squared_array = one_dimensional_array ** 2
+# print("Squared array:", squared_array)
+# # Sum of elements
+# sum_of_elements = np.sum(one_dimensional_array)
+# print("Sum of elements:", sum_of_elements)
+
+# array1=np.array([1,2,3,4,5])
+# array2=np.array([11,12,13,14,15])
+# addition_result = array1 + array2
+# print(addition_result)
+
+# # Subtraction
+# subtraction_result = array2 - array1
+# print("Subtraction result:", subtraction_result)
+
+# multiplication_result = array1 * array2
+# print("Multiplication result:", multiplication_result)
+
+# # Division (element-wise)
+# division_result = array2 / array1
+# print("Division result:", division_result)
+
+# # Element-wise exponentiation
+# exponential_result = np.exp(array1)
+# print("Exponential result:", exponential_result)
+
+# # Element-wise square root
+# sqrt_result = np.sqrt(array2)
+# print("Square root result:", sqrt_result)
+
+# two dimentional array
+
+# two_dimentional_array=np.array([[10,20,30],[11,22,33],[22,23,24],[32,33,34]])
+# print(two_dimentional_array)
+
+# print(two_dimentional_array[1,1])
+
+# matrix1 = np.array([[1, 2], [3, 4]])
+# matrix2 = np.array([[5, 6], [7, 8]])
+# matrix_product = np.dot(matrix1, matrix2)
+# print("Matrix product:")
+# print(matrix_product)
+
+# a=np.dot(matrix1,2)
+# print(a)
+
+import numpy as np
+
+# Creating a two-dimensional array
+# two_dimensional_array = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# # Using nditer to iterate over the array
+# with np.nditer(two_dimensional_array, flags=['multi_index'], op_flags=['readwrite']) as it:
+#     for x in it:
+#         print("Index:", it.multi_index, "Value:", x)
+
+# two_dimentional_array=np.array([[1,2,3],[12,13,14],[4,5,6],[7,8,9]])
+# with np.nditer(two_dimentional_array,flags=['multi_index'],op_flags=['readwrite']) as suneel:
+#     for x in suneel:
+#         print("Index",suneel.multi_index,'value',x)
+
+import numpy as np
+
+# my_array=[[1,2,3],[4,5,6]]
+# numpy_array=np.asarray(my_array,dtype=float,order='F')
+# print(numpy_array)
+# for i in np.nditer(numpy_array):
+#     print(i)
+import numpy as np
+
+# a=b"welcome"
+
+# get_data=np.frombuffer(a,dtype="S1")
+# print(get_data)
+
+# zeros_3d = np.zeros((2, 3, 4), dtype=int)
+
+# print("3D array of zeros with int dtype:")
+# print(zeros_3d)
+
+# print(np.full([2,3],10))
+
+# a=np.arange(10,20,1,dtype=float)
+# print(a)
+
+# n=np.linspace(10,100,10,retstep=True)
+# print(n)
+
+# " C " row major order
+# "F " column major order
+
+
+# Assume 'data' is a ctypes array from some external C code
+# c_data = (ctypes.c_double * 5)()
+# np_array = np.frombuffer(c_data, dtype=np.float64)
+# print(np_array)
+
+import pandas as pd
+# print(pd.__version__)
+
+# d=pd.read_csv("C:\\Users\\VSK REDDY\\Desktop\\Restaurant_revenue (1).csv")
+# df=pd.DataFrame(d)
+# ad=df.head(10)
+# ad=df.tail(10)
+# ad=df.describe()
+# ad=df[0:9]
+# ad=df[0:6]
+# ad=df[['Menu_Price','Reviews']]
+# a=df.shape
+# a=df[['Menu_Price','Reviews']][0:5:2]
+# for i in df.iterrows():
+#     print(i)
+
+# Creating a DataFrame for illustration
+# data = {'Name': ['Alice', 'Bob', 'Charlie'],
+#         'Age': [25, 30, 35],
+#         'City': ['New York', 'San Francisco', 'Los Angeles']}
+# df = pd.DataFrame(data)
+
+# # Using iterrows to iterate over DataFrame rows
+# for index, row in df.iterrows():
+#     print(f"Index: {index}, Name: {row['Name']}, Age: {row['Age']}, City: {row['City']}")
+
+# explning Loc & iloc
+
+# data=df.loc[2,['Menu_Price','Number_of_Customers']]
+# data=df.loc[1,'Number_of_Customers']
+# data=df.loc[0:5,['Menu_Price','Number_of_Customers']]
+# data=df.loc[0:5,'Number_of_Customers':'Reviews']
+#iloc
+# data=df.iloc[1,2]
+# data=df.iloc[0:5]
+# data=df.iloc[[1,2,3,4]]
+# data=df.iloc[0:5,[1,2,3]]
+# data=df.iloc[[1,2,3],[2,3,4]]
+# data=df.sort_values('Marketing_Spend',ascending=False)
+
+# manupulating Adding and deleting columns
+# data=df['rating']='positive'
+# print(data)
+# data1=df[0:4]
+# print(data1)
+# data2=df.loc[df['Reviews'] > 60, 'rating'] = 'Positive'
+# data3=df.loc[df['Reviews'] < 60, 'rating'] = 'Nagitive'
+# df.tail(10)
+# print(df)
+# df=pd.DataFrame(d)
+# a=df.duplicated()
+# a=df.loc[(df['Menu_Price']>40)&(df['Menu_Price']<45)]
+#df.to_csv()
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+n= int(input("enter the number :"))
+n1=0
+n2=1
+if n<=0:
+    print("pls provide vallid number")
+elif n==1:
+    print("the fibonaci number of 1 is 0")
+else:
+    count1=0
+    while count1<n:
+        print(n1 ,end= ' ')
+        nextelement=n1+n2
+        n1=n2
+        n2=nextelement
+        count1+=1

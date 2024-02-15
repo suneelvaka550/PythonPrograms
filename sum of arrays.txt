@@ -1,0 +1,9 @@
+myarray=[10,20,30,40]
+print(sum(myarray))
+sum=0
+for i in myarray:
+    sum=sum+i
+print(sum)   
+
+my=[1,2,3,4]
+print(sum(my,10))    # here we get 10+10 =20 
